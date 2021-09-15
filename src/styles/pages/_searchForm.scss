@@ -1,0 +1,19 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+.search-form {
+  h2 {
+    text-align: center;
+  }
+}
+.stories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+article{
+    background-color: $white;
+    margin-bottom: 10px;
+    width: 30vw;
+    
+}
+}

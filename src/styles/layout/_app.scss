@@ -1,0 +1,73 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+.section {
+    width: 90vw;
+    margin: 0 auto;
+    @include flex-center-column;
+    max-width: $max-width;
+}
+@include large {
+    .section {
+        width: 95vw;
+    }
+}
+
+.container {
+    width: 90vw;
+    margin: 5rem 0;
+    max-width: $fixed-width;
+    background: $white;
+    border-radius: $radius;
+    padding: 1.5rem 2rem;
+    box-shadow: $dark-shadow;
+    h3 {
+        font-weight: normal;
+        text-transform: none;
+        margin-bottom: 2rem;
+    }
+    button {
+        color: $white;
+        display: block;
+        width: 45%;
+        border-color: transparent;
+        background: $primary-4;
+        margin: 2rem auto 0 auto;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        padding: .5rem 0;
+        letter-spacing: $spacing;
+        border-radius: $radius;
+        outline: none;
+    }
+    .buttons {
+        @include flex-center;
+    }
+}
+
+.btn {
+    background: $primary-4;
+    display: inline-block;
+    width: 100%;
+    padding: .25rem .5rem;
+    border-radius: $radius;
+    text-transform: capitalize;
+    color: $white;
+    letter-spacing: $spacing;
+    border-color: transparent;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.underline {
+    @include box(12rem, 0.25rem);
+    @include center-auto;
+    background: $primary-4;
+}
+.form-search{
+    h2{
+        text-align: center;
+    }
+}
