@@ -338,14 +338,43 @@ main {
 
 .search-form h2 {
   text-align: center;
+  margin-bottom: 15px;
+}
+.search-form input {
+  background: #fff;
+  margin: auto;
+  display: block;
 }
 
 .stories {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
 }
 .stories article {
   background-color: #fff;
   margin-bottom: 10px;
   width: 30vw;
+  padding: 5px;
+  border-radius: 0.25rem;
+  box-shadow: 1px 4px rgba(0, 0, 0, 0.5);
+}
+.stories article div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-container .btn {
+  width: 5vw;
+  margin-bottom: 30px;
+}
+.btn-container p {
+  margin-left: 15px;
+  margin-right: 15px;
 }/*# sourceMappingURL=main.css.map */
